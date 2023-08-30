@@ -85,6 +85,18 @@ By using the Singleton pattern in the context of test automation scripts, we can
 
 Overall, the Singleton pattern is a valuable addition to a test automation framework when it comes to managing the instantiation and usage of the WebDriver class. It helps maintain consistency, control access, and optimize resource utilization.
 
+# Explain relationship between WebDriver class instance/object and Singleton pattern
+
+The relationship between the WebDriver class instance/object and the Singleton pattern is that the Singleton pattern ensures that there is only one instance of the WebDriver class throughout the execution of the tests.
+
+In the context of test automation with Selenium WebDriver, it is common to have multiple tests that require interaction with the web browser. However, it is important to have only one instance of the WebDriver to avoid unnecessary overhead and potential conflicts.
+
+By implementing the Singleton pattern, we can ensure that there is only one instance of the WebDriver class created and used across multiple tests. The Singleton pattern controls access to the WebDriver instance and provides a way to retrieve the same instance whenever it is needed.
+
+The Singleton pattern guarantees that all tests share the same WebDriver instance, preventing multiple instances from being created and ensuring consistency in the browser session. This is particularly useful when running tests in parallel or when multiple test classes need to interact with the same browser instance.
+
+In summary, the Singleton pattern is a valuable design pattern to manage the WebDriver instance in test automation frameworks. It helps control access, prevents unnecessary instantiation, and ensures that there is only one instance of the WebDriver throughout the execution of the tests.
+
 # Singleton Pattern Use for WebDriver - explanation, pros, cons, code sample in Python
 
 The Singleton pattern is a design pattern that restricts the instantiation of a class to a single instance. This pattern is particularly useful in scenarios where exactly one object is needed to coordinate actions across the system. In the context of using WebDriver for automation, the Singleton pattern can be used to ensure that only one WebDriver instance is created throughout the execution of the automation script. This can help manage resources more effectively and avoid potential issues with multiple WebDriver instances.
